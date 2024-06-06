@@ -1,9 +1,11 @@
+import Header from "../components/Header";
+
 function HeaderOnly({ children }) {
   return (
     <div>
-      <h2>Header</h2>
+      <Header />
       <div className="container">
-        {children}
+        <div className="content">{children}</div>
       </div>
     </div>
   );

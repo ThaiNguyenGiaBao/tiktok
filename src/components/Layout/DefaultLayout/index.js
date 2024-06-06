@@ -1,15 +1,16 @@
-import Header from "./Header";
-import Sidebar from "./Sidebar";
+import Header from "../components/Header";
+import Sidebar from "../components/Sidebar";
+import styles  from "./DefaultLayout.module.scss";
 
 function DefaultLayout({ children }) {
   return (
-    <>
+    <div className={styles.wrapper}>
       <Header />
-      <div className="container">
+      <div className={styles.container}>
         <Sidebar />
-        <div className="content">{children}</div>
+        <div className={styles.content}>{children}</div>
       </div>
-    </>
+    </div>
   );
 }
 
