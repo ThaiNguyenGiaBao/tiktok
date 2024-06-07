@@ -1,0 +1,9 @@
+.wrapper {
+  width: 100%;
+  min-height: 100px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgb(0 0 0 / 12%) 0px 2px 12px;
+  max-height: min(734px, (100vh - 96px));
+  padding: 10px;
+  border-radius: 5px;
+}
